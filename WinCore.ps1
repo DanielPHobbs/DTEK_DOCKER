@@ -1,0 +1,1 @@
+docker run -it mcr.microsoft.com/windows/servercore:ltsc2019 powershell
