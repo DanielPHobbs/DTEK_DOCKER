@@ -16,7 +16,11 @@ docker run -it mcr.microsoft.com/windows/servercore:ltsc2019
 docker ps
 
 
-Docker run -it microsoft/nanoserver powershell.exe
+docker run mcr.microsoft.com/windows/nanoserver:1903 
+
+docker run -it mcr.microsoft.com/windows/nanoserver:1809 powershell
+
+docker run -it microsoft/nanoserver-insider-powershell powershell -c '$psversiontable' #fails 
 
 Docker run -d -p 8080:80 --name iis microsoft/iis -latest
 
