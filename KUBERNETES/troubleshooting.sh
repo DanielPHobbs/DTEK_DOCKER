@@ -111,4 +111,9 @@ sudo nano /etc/hosts
 
 
 kubectl exec -i -t metrics-metrics-server-5c55945f5c-7lz6h -- nslookup worker01 -n kube-system
+
+
+sudo cp /etc/kubernetes/admin.conf $HOME/
+sudo chown $(id -u):$(id -g) $HOME/admin.conf
+export KUBECONFIG=$HOME/admin.conf
     
